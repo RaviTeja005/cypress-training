@@ -1,5 +1,5 @@
 ///< reference types="types"/>
-describe('my test suite',() =>{
+describe('test suite on visible and invisible elements',() =>{
    it('mouse hover',() =>{
      cy.visit('https://rahulshettyacademy.com/AutomationPractice/')
      cy.get('div.mouse-hover-content').invoke('show')

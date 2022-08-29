@@ -1,6 +1,6 @@
-///< reference types ='cypress'>/
-describe('My Test Suite',() =>{
-   it('first test case',() =>{
+///< reference types ='cypress'/>
+describe('Test suite for window alerts pop-ups',() =>{
+   it('tests for window alert and window confirm',() =>{
     cy.visit('https://rahulshettyacademy.com/AutomationPractice/')
     cy.get('#alertbtn').click()
     cy.get('#confirmbtn').click()

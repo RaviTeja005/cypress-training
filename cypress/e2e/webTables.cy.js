@@ -1,6 +1,6 @@
 ///<reference types="cypress"/>
-describe('my test suite',()=>{
-  it('web tables',()=>{
+describe('Test suite on web table',()=>{
+  it('tests on handling web table elements',()=>{
     cy.visit('https://rahulshettyacademy.com/AutomationPractice/')
     cy.get('[name="courses"] td:nth-child(2)').each(($e1,index,$list)=>{
          const text=$e1.text()

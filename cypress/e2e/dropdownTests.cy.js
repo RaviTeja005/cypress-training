@@ -1,5 +1,5 @@
-describe('sample tests', () =>{
-     it('My first test', () =>{
+describe('test suite for dropdowns', () =>{
+     it('tests for static and dynamic dropdowns', () =>{
         cy.visit('https://rahulshettyacademy.com/AutomationPractice/')
         cy.get('.radioButton').eq(0).click()
         cy.get('label[for="radio1"]').contains('Radio1').should('be.visible')
