@@ -1,7 +1,7 @@
 ///< reference types="cypress"/>
-import HomePage from '../e2e/pageObjectModel/HomePage'
-import ProductPage from '../e2e/pageObjectModel/productPage'
-import CheckoutPage from '../e2e/pageObjectModel/CheckoutPage'
+import HomePage from '../pageObjectModel/HomePage'
+import ProductPage from '../pageObjectModel/productPage'
+import CheckoutPage from '../pageObjectModel/CheckoutPage'
 describe('Test suite for fixtures in cypress and POM',() =>{
    before(() =>{
      cy.fixture('example').then((data)=>
@@ -29,7 +29,6 @@ globalThis.data=data
      productPage.getcheckout().click()
      checkoutPage.getCheckoutbtn().click()
      checkoutPage.getTypeCountry().type('india')
-     cy.wait(8000)
      checkoutPage.getCountryName().click()
      checkoutPage.getCheckbox().click({force:true})
      checkoutPage.getPurchasebtn().click()
